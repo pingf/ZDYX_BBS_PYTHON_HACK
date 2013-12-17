@@ -1,0 +1,33 @@
+<header>
+	{% block header %}
+<div class="navbar">
+        <div class="navbar-inner">
+            <a class="brand" href="" class="nav_link">
+                ThoughtWorks BBS
+            </a>
+            <ul class="nav">
+            	{% if headtype == 'noauth' %}
+                <li>
+                    <a href="/login" >
+                    	Home
+                    </a> 
+                </li>
+                
+                {% elif headtype == 'auth' %}
+                <li>
+                    <a href="/home" >Home</a>
+                </li>
+                
+                <li>
+                    <a href="/posts/create" class="nav_link"><i class="icon-plus"></i> Create Post</a>
+                </li>
+                <li>
+                    <a href="logout" class="nav_link"><i class="icon-eject"></i> Logout</a>
+                </li>
+                {% end %}
+                
+            </ul>
+        </div>
+    </div>
+	{% end %}
+</header>

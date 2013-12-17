@@ -1,0 +1,27 @@
+{% extends "../main.html" %}
+
+{% block content %}
+<div id="createPanel">
+    <form class="form-horizontal" action="create" method="post">
+        <div class="control-group">
+            <label class="control-label" for="title">Title</label>
+            <div class="controls">
+            	<input type="hidden" id="parentId" name="parentId" value="0" />
+                <input type="text" placeholder="post title" id="title" name="title" />
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="content">Content</label>
+            <div class="controls">
+                <textarea placeholder="post content" id="content" name="content" cols="100" rows="6"></textarea>
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <button type="submit" class="btn">Create</button>
+            </div>
+        </div>
+        {% raw xsrf_form_html() %}
+    </form>
+</div>
+{% end %}

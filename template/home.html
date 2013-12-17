@@ -1,0 +1,26 @@
+{% extends "main.html" %}
+
+{% block content %}
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Publish Time</th> 
+    </tr>
+    </thead>
+    <tbody>
+    {% for post in posts %}  
+    	<tr>
+            <td>
+            	<a href="/posts/{{post.id}}"> 
+            	{{ post.title }}
+            	</a> 
+            </td>
+            <td>{{ post.author_name }} </td>
+            <td>{{ post.create_time }} </td>
+        </tr>
+	{% end %} 
+    </tbody>
+</table>
+{% end %}

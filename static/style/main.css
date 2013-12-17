@@ -1,0 +1,93 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica;
+}
+
+body {
+    padding: 20px;
+}
+
+.brand {
+    display: inline-block;
+    font-size: 14pt;
+}
+
+.nav {
+    display: inline-block;
+    float: right;
+}
+
+.nav li {
+    list-style: none;
+    text-decoration: none;
+    float: left;
+    margin-right: 10px;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+a { text-decoration: none; }
+a:link { color: black; }
+a:visited { color: black; }
+a:hover { color: grey; }
+a:active { color: gray; }
+
+.navbar-text {
+    color: lightskyblue;
+}
+
+.page-action {
+    font-size: 16pt;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.error {
+    background-color: indianred;
+}
+
+
+form label {
+    display: inline-block;
+    width: 10em;
+}
+
+.controls {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+form input[type=text],[type=password] {
+    padding: 4px;
+    width: 14em;
+    font-size: 12pt;
+}
+
+select {
+    border: 1px solid gray;
+    padding: 2px;
+    font-size: 12pt;
+}
+
+button {
+    font-size: 12pt;
+    padding: 5px;
+}
+
+table th {
+    width: 100px;
+    text-align: left;
+}
+
+table {
+    border-spacing: 8px;
+    border-collapse: separate;
+}
+
+.text-error {
+    color: indianred;
+}
