@@ -9,12 +9,14 @@ Prepare
 Make sure U have mysql,python,tornado installed.
 Then,import the sql schema~
 
+
 mysql -uroot -p < db/schema.sql
-====================
+
 
 Run
 -----------------
 it will use two processes by default.
 
+
 python bbs.py
-====================
+
