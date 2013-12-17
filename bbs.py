@@ -1,5 +1,5 @@
 #coding=utf-8
-'''Created on Dec 15, 2013 @author: Jesse Meng'''
+'''Created on Dec 15, 2013 @author: Jesse MENG'''
 import os.path
 import torndb
 import tornado.httpserver
