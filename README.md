@@ -10,7 +10,7 @@ Make sure U have mysql,python,python-MySQLdb,tornado,torndb installed.
 Then,import the sql schema~
 
 
-mysql -uroot -p < db/schema.sql
+    mysql -uroot -p < db/schema.sql
 
 
 Run
@@ -18,5 +18,5 @@ Run
 it will use two processes by default.
 
 
-python bbs.py
+    python bbs.py
 
